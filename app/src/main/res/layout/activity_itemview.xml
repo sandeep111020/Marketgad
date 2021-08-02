@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Itemview">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="24dp"
+        android:textColor="@color/black"
+        android:text="Chakadola store"
+        android:textStyle="bold"
+        android:id="@+id/datadisplay"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:textColor="@color/black"
+        android:text="Aninthpalli, Sambalpur"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:layout_marginTop="25dp"
+        android:text=" Ph:9646705142  | Email:chakadola@gmail.com"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Date"
+        android:textColor="@color/black"
+        android:id="@+id/displaydate"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_marginRight="5dp"
+            android:background="#A7A1A1"
+            android:text="Serial no"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_weight="2"
+            android:layout_marginRight="5dp"
+            android:background="#A7A1A1"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:text="Product"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_weight="2"
+            android:background="#A7A1A1"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:text="Price"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:layout_marginTop="6dp"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/itemcount"
+                android:text="$0"
+                android:layout_marginTop="15dp"
+                android:textSize="50dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/white"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Items"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/white"
+                android:textSize="24dp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_weight="2"
+            android:id="@+id/upload"
+            android:background="@drawable/ic_baseline_upload_24"
+            android:orientation="horizontal" />
+        <TextView
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/totalamount"
+                android:text="$0"
+                android:layout_marginTop="15dp"
+                android:textSize="50dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/white"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/white"
+                android:textSize="24dp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>
